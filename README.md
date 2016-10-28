@@ -24,8 +24,28 @@ pod "SwiftSkeleton"
 
 ## Recommended Pods
 
+```ruby
+
+pod 'DeviceKit', '~> 1.0'
 pod 'Alamofire'
+pod 'SwiftyJSON'
+pod 'Realm'
+
 pod 'Cache'
+pod 'KeychainAccess'
+
+pod 'Hue'
+pod 'ChameleonFramework'
+pod 'PureLayout'
+
+pod 'Money'
+pod 'PhoneNumberKit', '~> 1.0'
+
+pod 'VENTouchLock', '~> 1.0'
+pod 'VENTokenField', '~> 2.0'
+pod 'VENSeparatorView', '~> 1.0.0'
+
+```
 
 
 

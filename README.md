@@ -20,6 +20,15 @@ it, simply add the following line to your Podfile:
 pod "SwiftSkeleton"
 ```
 
+
+
+## Recommended Pods
+
+pod 'Alamofire'
+pod 'Cache'
+
+
+
 ## Author
 
 Manuel Escrig Ventura, manuelescrig@gmail.com

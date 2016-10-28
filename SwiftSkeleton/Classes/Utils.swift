@@ -42,14 +42,11 @@ func appBuild() -> String {
 }
 
 func appVersionAndBuild() -> String {
-    if appVersion != nil && appBuild != nil {
-        if appVersion() == appBuild() {
-            return "v\(appVersion)"
-        } else {
-            return "v\(appVersion)(\(appBuild))"
-        }
+    if appVersion() == appBuild() {
+        return "v\(appVersion)"
+    } else {
+        return "v\(appVersion)(\(appBuild))"
     }
-    return ""
 }
 
 func appBundleID() -> String {

@@ -1,0 +1,16 @@
+PODS:
+  - SwiftSkeleton (0.1.0)
+
+DEPENDENCIES:
+  - SwiftSkeleton (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftSkeleton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftSkeleton: 0a72ed803dc59fbaa97a29937ff8579b71ee009d
+
+PODFILE CHECKSUM: e88df165fa5a23c33d273719f1bbb785e53bfef3
+
+COCOAPODS: 1.1.0.rc.2

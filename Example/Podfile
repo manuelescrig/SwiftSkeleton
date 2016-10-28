@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftSkeleton_Example' do
+  pod 'SwiftSkeleton', :path => '../'
+
+  target 'SwiftSkeleton_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

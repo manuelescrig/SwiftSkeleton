@@ -1,0 +1,6 @@
+framework module SwiftSkeleton {
+  umbrella header "SwiftSkeleton-umbrella.h"
+
+  export *
+  module * { export * }
+}

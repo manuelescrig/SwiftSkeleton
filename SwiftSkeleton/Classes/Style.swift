@@ -17,6 +17,7 @@ struct Style {
     static var themeButtonFont = UIFont(name: "HelveticaNeue-Medium", size: 17)
     static var themeStatusFont = UIFont(name: "HelveticaNeue-Medium", size: 15)
     
+    @available(iOS 8.2, *)
     static var systemFont = UIFont.systemFont(ofSize: 14.0, weight: UIFontWeightBold)
     static var smallCapsDesc = systemFont.fontDescriptor.addingAttributes([
         UIFontDescriptorFeatureSettingsAttribute: [
@@ -27,7 +28,6 @@ struct Style {
         ]
         ])
     static var themeLogoFont = UIFont(descriptor: smallCapsDesc, size: systemFont.pointSize)
-    
     
     
     static var themeTextColor = UIColor.init(colorLiteralRed: 0/255.0, green: 32/255.0, blue: 47/255.0, alpha: 1)

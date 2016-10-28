@@ -9,6 +9,7 @@
 import Foundation
 
 extension UIImage {
+    
     var squared: UIImage? {
         let square = CGSize(width: min(size.width, size.height), height: min(size.width, size.height))
         let imageView = UIImageView(frame: CGRect(origin: .zero, size: square))
@@ -20,7 +21,8 @@ extension UIImage {
         imageView.layer.render(in: context)
         let result = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return result    }
+        return result
+    }
     
     var rounded: UIImage? {
         let imageView = UIImageView(image: self)
@@ -33,6 +35,7 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return result
     }
+    
     var circle: UIImage? {
         let square = CGSize(width: min(size.width, size.height), height: min(size.width, size.height))
         let imageView = UIImageView(frame: CGRect(origin: .zero, size: square))
@@ -56,7 +59,11 @@ extension UIImage {
         self.draw(in: CGRect.init(x: 0, y: 0, width: newWidth, height: newHeight))
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
         return newImage!
     }
+    
+    public func compressImage(rate: CGFloat) -> Data? {
+        return UIImageJPEGRepresentation(self, rate)
+    }
+    
 }

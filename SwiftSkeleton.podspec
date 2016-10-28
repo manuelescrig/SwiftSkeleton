@@ -33,7 +33,7 @@ DESC
   s.source           = { :git => 'https://github.com/manuelescrig/SwiftSkeleton.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/manuelescrig'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '8.2'
 
   s.source_files = 'SwiftSkeleton/Classes/**/*'
   

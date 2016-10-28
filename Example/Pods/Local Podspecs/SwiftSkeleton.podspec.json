@@ -1,9 +1,9 @@
 {
   "name": "SwiftSkeleton",
   "version": "0.1.0",
-  "summary": "A short description of SwiftSkeleton.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SwiftSkeleton",
+  "summary": "SwiftSkeleton is a set of Extensions and Utils for your Swift Project.",
+  "description": "SwiftSkeleton is a set of Extensions and Utils for your Swift Project.\n\nSpeed up to Swift App Development with SwiftSkeleton.",
+  "homepage": "https://github.com/manuelescrig/SwiftSkeleton",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,12 @@
     "Manuel Escrig Ventura": "manuelescrig@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/SwiftSkeleton.git",
+    "git": "https://github.com/manuelescrig/SwiftSkeleton.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/manuelescrig",
   "platforms": {
-    "ios": "8.0"
+    "ios": "8.2"
   },
   "source_files": "SwiftSkeleton/Classes/**/*"
 }

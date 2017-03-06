@@ -1,9 +1,6 @@
 # SwiftSkeleton
 
-[![CI Status](http://img.shields.io/travis/Manuel Escrig Ventura/SwiftSkeleton.svg?style=flat)](https://travis-ci.org/Manuel Escrig Ventura/SwiftSkeleton)
-[![Version](https://img.shields.io/cocoapods/v/SwiftSkeleton.svg?style=flat)](http://cocoapods.org/pods/SwiftSkeleton)
-[![License](https://img.shields.io/cocoapods/l/SwiftSkeleton.svg?style=flat)](http://cocoapods.org/pods/SwiftSkeleton)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftSkeleton.svg?style=flat)](http://cocoapods.org/pods/SwiftSkeleton)
+[WIP]
 
 ## Example
 

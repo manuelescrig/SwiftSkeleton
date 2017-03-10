@@ -14,6 +14,57 @@ private let UIViewAnimationSpringVelocity: CGFloat = 0.5
 
 public extension UIView {
     
+    // MARK: Layout Methods
+
+    func bindFrameToSuperviewBounds() {
+        guard let superview = self.superview else {
+            print("Error! `superview` was nil – call `addSubview(view: UIView)` before calling `bindFrameToSuperviewBounds()` to fix this.")
+            return
+        }
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[subview]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["subview": self]))
+        superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[subview]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["subview": self]))
+    }
+    
+    func bindFrameToSuperviewBounds(insets: UIEdgeInsets) {
+        guard let superview = self.superview else {
+            print("Error! `superview` was nil – call `addSubview(view: UIView)` before calling `bindFrameToSuperviewBounds()` to fix this.")
+            return
+        }
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        superview.addConstraint(NSLayoutConstraint(item: self,
+                                                   attribute: .top,
+                                                   relatedBy: .equal,
+                                                   toItem: superview,
+                                                   attribute: .top,
+                                                   multiplier: 1.0,
+                                                   constant: insets.top))
+        superview.addConstraint(NSLayoutConstraint(item: self,
+                                                   attribute: .leading,
+                                                   relatedBy: .equal,
+                                                   toItem: superview,
+                                                   attribute: .leading,
+                                                   multiplier: 1.0,
+                                                   constant: insets.left))
+        superview.addConstraint(NSLayoutConstraint(item: self,
+                                                   attribute: .bottom,
+                                                   relatedBy: .equal,
+                                                   toItem: superview,
+                                                   attribute: .bottom,
+                                                   multiplier: 1.0,
+                                                   constant: insets.bottom))
+        superview.addConstraint(NSLayoutConstraint(item: self,
+                                                   attribute: .trailing,
+                                                   relatedBy: .equal,
+                                                   toItem: superview,
+                                                   attribute: .trailing,
+                                                   multiplier: 1.0,
+                                                   constant: insets.right))
+    }
+    
+    
     // MARK: Frame parameters
     
     var width: CGFloat {

@@ -1,6 +1,6 @@
 //
 //  Bool+Extensions.swift
-//  Pods
+//  SwiftSkeleton
 //
 //  Created by Manuel on 10/28/16.
 //

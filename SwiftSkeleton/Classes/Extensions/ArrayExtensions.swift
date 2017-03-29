@@ -1,6 +1,6 @@
 //
 //  Array+Extensions.swift
-//
+//  SwiftSkeleton
 //  Created by Manuel on 3/17/17.
 //  Copyright © 2017 Manuel. All rights reserved.
 //
